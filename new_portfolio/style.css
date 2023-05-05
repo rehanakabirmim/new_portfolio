@@ -1,0 +1,123 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, rgba(149, 141, 151, 0), rgb(249, 234, 254));
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+nav{
+    width:7%;
+    text-align: center;
+    border:1px solid gray;
+    border-radius: 3px;
+    margin: 0 2%;
+    padding: 10px 0;
+    background: white;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li span{
+    display:block;
+    padding-top: 3px;
+}
+
+nav ul li a{
+    color:black;
+    text-decoration: none;
+    padding: 5px 0;
+    display: inline-block;
+    font-weight: bold;
+}
+nav ul hr{
+    border:none;
+    height:1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.886), rgba(0,0,0,0.5))
+   
+}
+header{
+    width: 30%;
+    height: 100%;
+}
+header .pic{
+    background-image: url("images/background-img.jpg");
+    background-size: cover;
+    height: 50%;
+    width:100%;
+    position: relative;
+}
+.about__pic{
+    height:35%;
+    width:35%;
+    position: absolute;
+    left:32%;
+    top:55%;
+    z-index: 99;
+    
+}
+.about__pic img{
+    width:100%;
+    border: 8px solid rgb(248, 243, 243);
+    border-radius: 50%;
+ 
+}
+.btn{
+    display: block;
+    text-align: center;
+    margin-top: 70px;
+    
+}
+ button{
+    margin: 0 10px;
+    padding: 7px 14px;
+    border-color: rgb(248, 134, 134);
+}
+header .desc{
+    background: white;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: 2px solid gray;
+}
+.pic::before{
+    content:'';
+    display:block;
+    clear:both;
+    position: absolute;
+    bottom:0;
+    right:0;
+    border-bottom:100px solid white;
+    border-left:310px solid transparent;
+    border-right:0 solid transparent;
+}
+.pic::after{
+    content:'';
+    display:block;
+    clear:both;
+    position: absolute;
+    bottom:0;
+    right:0;
+    border-bottom:100px solid white;
+    border-left:0 solid transparent;
+    border-right:310px solid transparent;
+}
+.social ul li a{
+    color:black;
+    text-decoration: none;
+    padding: 5px 0;
+    display: inline-block;
+    font-weight: bold;
+}
+#section{
+    width:55%;
+    margin: 0 2%;
+    border:2px solid rgb(241, 195, 243);
+    height:96%;
+}
